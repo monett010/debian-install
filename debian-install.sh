@@ -3,7 +3,7 @@
 sudo apt update
 
 echo "Installing some important apps..."
-sudo apt install zoxide nvim wget curl fastfetch dkms
+sudo apt install zoxide nvim wget curl fastfetch dkms ntfs-3g
 
 echo "Installing Cinnamon DE..."
 sudo apt install xorg cinnamon slick-greeter bluetooth bluez blueman gnome-screenshot pluma kupfer mate-terminal gparted
