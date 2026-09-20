@@ -6,7 +6,7 @@ echo "Installing some important apps..."
 sudo apt install zoxide neovim wget curl fastfetch dkms ntfs-3g python3-pip python3-virtualenv
 
 echo "Installing Cinnamon DE..."
-sudo apt install xorg cinnamon slick-greeter bluetooth bluez blueman gnome-screenshot pluma kupfer mate-terminal gparted
+sudo apt install xorg cinnamon slick-greeter bluetooth bluez blueman gnome-screenshot pluma kupfer mate-terminal gparted synaptic
 
 sudo apt remove gnome-terminal
 
