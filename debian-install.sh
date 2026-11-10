@@ -37,3 +37,6 @@ echo eval "\"\$(zoxide init zsh)\"" >> /home/$USER/.zshrc
 printf "\n\n" >> /home/$USER/.bashrc
 echo "# aliases" >>  /home/$USER/.zshrc 
 echo "alias list='ls -la'" >>  /home/$USER/.zshrc 
+
+echo "Fixing NetworkManager..."
+sudo mv /etc/network/interfaces /etc/network/interfaces_old
