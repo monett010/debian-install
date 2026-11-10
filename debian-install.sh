@@ -29,7 +29,7 @@ echo "Writing custom settings to .bashrc..."
 printf "\n\n" >> /home/$USER/.bashrc
 echo "# zoxide" >>  /home/$USER/.bashrc
 echo eval "\"\$(zoxide init bash)\"" >> /home/$USER/.bashrc
-printf "\n\n" >> /home/$USER/.bashrc
+printf "\n" >> /home/$USER/.bashrc
 echo "# aliases" >>  /home/$USER/.bashrc
 echo "alias list='ls -la'" >>  /home/$USER/.bashrc
 
@@ -37,6 +37,6 @@ echo "Writing custom settings to .zshrc..."
 printf "\n\n" >> /home/$USER/.bashrc
 echo "# zoxide" >>  /home/$USER/.zshrc 
 echo eval "\"\$(zoxide init zsh)\"" >> /home/$USER/.zshrc
-printf "\n\n" >> /home/$USER/.bashrc
+printf "\n" >> /home/$USER/.bashrc
 echo "# aliases" >>  /home/$USER/.zshrc 
 echo "alias list='ls -la'" >>  /home/$USER/.zshrc
