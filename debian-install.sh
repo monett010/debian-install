@@ -21,3 +21,19 @@ sudo apt install arc-theme papirus-icon-theme budgie-backgrounds fonts-cascadia-
 echo "Downloading Meslo LGS Nerd Font..."
 cd /home/$USER/Downloads
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Meslo.zip
+
+echo "Writing custom settings to .bashrc..."
+printf "\n\n" >> /home/$USER/.bashrc
+echo "# zoxide" >>  /home/$USER/.bashrc
+echo eval "\"\$(zoxide init bash)\"" >> /home/$USER/.bashrc
+printf "\n\n" >> /home/$USER/.bashrc
+echo "# aliases" >>  /home/$USER/.bashrc
+echo "alias list='ls -la'" >>  /home/$USER/.bashrc
+
+echo "Writing custom settings to .zshrc..."
+printf "\n\n" >> /home/$USER/.bashrc
+echo "# zoxide" >>  /home/$USER/.zshrc 
+echo eval "\"\$(zoxide init zsh)\"" >> /home/$USER/.zshrc
+printf "\n\n" >> /home/$USER/.bashrc
+echo "# aliases" >>  /home/$USER/.zshrc 
+echo "alias list='ls -la'" >>  /home/$USER/.zshrc 
