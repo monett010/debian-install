@@ -13,7 +13,7 @@ sudo apt remove gnome-terminal
 echo "Fixing NetworkManager..."
 sudo mv /etc/network/interfaces /etc/network/interfaces_old
 
-read -p "Would you like to install flatpak? (y/n) " flatpak
+read -p "Would you like to install flatpak? [y/N] " flatpak
     if [ "$flatpak" == "y" ]; then
         sudo apt install flatpak
     fi
@@ -26,7 +26,7 @@ cd /home/$USER/Downloads
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Meslo.zip
 
 echo "Writing custom settings to .bashrc..."
-printf "\n\n" >> /home/$USER/.bashrc
+printf "\n" >> /home/$USER/.bashrc
 echo "# zoxide" >>  /home/$USER/.bashrc
 echo eval "\"\$(zoxide init bash)\"" >> /home/$USER/.bashrc
 printf "\n" >> /home/$USER/.bashrc
@@ -34,9 +34,9 @@ echo "# aliases" >>  /home/$USER/.bashrc
 echo "alias list='ls -la'" >>  /home/$USER/.bashrc
 
 echo "Writing custom settings to .zshrc..."
-printf "\n\n" >> /home/$USER/.bashrc
+printf "\n" >> /home/$USER/.zshrc
 echo "# zoxide" >>  /home/$USER/.zshrc 
 echo eval "\"\$(zoxide init zsh)\"" >> /home/$USER/.zshrc
-printf "\n" >> /home/$USER/.bashrc
+printf "\n" >> /home/$USER/.zshrc
 echo "# aliases" >>  /home/$USER/.zshrc 
 echo "alias list='ls -la'" >>  /home/$USER/.zshrc
