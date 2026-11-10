@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update
+sudo apt update && sudo apt upgrade
 
 echo "Installing some important apps..."
 sudo apt install zoxide neovim wget curl fastfetch dkms ntfs-3g python3-pip python3-virtualenv
