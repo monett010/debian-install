@@ -10,6 +10,9 @@ sudo apt install xorg cinnamon slick-greeter bluetooth bluez blueman gnome-scree
 
 sudo apt remove gnome-terminal
 
+echo "Fixing NetworkManager..."
+sudo mv /etc/network/interfaces /etc/network/interfaces_old
+
 read -p "Would you like to install flatpak? (y/n) " flatpak
     if [ "$flatpak" == "y" ]; then
         sudo apt install flatpak
@@ -36,7 +39,4 @@ echo "# zoxide" >>  /home/$USER/.zshrc
 echo eval "\"\$(zoxide init zsh)\"" >> /home/$USER/.zshrc
 printf "\n\n" >> /home/$USER/.bashrc
 echo "# aliases" >>  /home/$USER/.zshrc 
-echo "alias list='ls -la'" >>  /home/$USER/.zshrc 
-
-echo "Fixing NetworkManager..."
-sudo mv /etc/network/interfaces /etc/network/interfaces_old
+echo "alias list='ls -la'" >>  /home/$USER/.zshrc
